@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableaux js</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        table, tr, td, th{
+            border: 1px solid;
+            border-collapse: collapse;
+            padding: 10px 15px;
+            margin: auto;
+            width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Les Tableaux</h2>
+    <div id="tableau"></div>
+
+    <script>
+        let tab = [
+            {
+                prenom: 'Abdou',
+                nom: 'Diop',
+                age: 19,
+                note: 18
+            },
+            {
+                prenom: 'Modou',
+                nom: 'Thiam',
+                age: 23,
+                note: 15
+            },
+            {
+                prenom: 'Penda',
+                nom: 'Mboup',
+                age: 25,
+                note: 17
+            },
+            {
+                prenom: 'Saliou',
+                nom: 'Diouf',
+                age: 18,
+                note: 14
+            },
+            {
+                prenom: 'Arame',
+                nom: 'Mbodj',
+                age: 20,
+                note: 19
+            },
+            {
+                prenom: 'Maty',
+                nom: 'Sarr',
+                age: 25,
+                note: 17
+            },
+            {
+                prenom: 'Fallou',
+                nom: 'Mbengue',
+                age: 24,
+                note: 19
+            },
+            {
+                prenom: 'Binetou',
+                nom: 'Fall',
+                age: 18,
+                note: 16
+            },
+            {
+                prenom: 'Djibi',
+                nom: 'Touré',
+                age: 21,
+                note: 18
+            },
+            {
+                prenom: 'Sokhna',
+                nom: 'Sylla',
+                age: 19,
+                note: 17
+            }
+        ];
+
+        let tableau = '<table><tr><th>Prenom</th><th>Nom</th><th>Age</th><th>Note</th></tr>';
+            for(let i = 0; i <= tab.length; i++){
+                tableau += '<tr><td>'+tab[i].prenom +'</td><td>'+tab[i].nom +'</td><td>'+tab[i].age+'</td><td>'+tab[i].note +'</td></tr>'
+                document.getElementById('tableau').innerHTML = tableau;
+            }
+        tableau = '</table>'
+    </script>
+</body>
+</html>
